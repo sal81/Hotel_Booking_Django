@@ -30,12 +30,12 @@ body{
     border-radius: 1rem;
     padding:1rem;
     margin:0.5rem;
-    background-color: rgb(44, 179, 241);
+    background-color: rgb(222, 237, 245);
     flex: 1;
     border-bottom: 5rem;
 }
 .room:hover{
-    background-color: darkcyan;
+    background-color: #9ad8d0;
 }
 
 

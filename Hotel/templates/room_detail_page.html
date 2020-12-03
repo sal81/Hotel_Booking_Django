@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Detail</title>
+    <script src="https://kit.fontawesome.com/692189991f.js"></script>
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="details.css">
+
+</head>
+
+<body>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Room Image -->
+        <div class="image">
+            <img
+                src="deluxe.jpg" style="width:500px;height:780px;">
+        </div>
+
+        <!-- Room Details -->
+        <div class="room"> 
+
+            <!-- Div 1: Back to Home -->
+            <div class="home">
+                <a href="room_list_page.html"><i class="fas fa-arrow-alt-circle-left">Home</i></a>
+            </div>
+
+            <!-- Div 2: Room Information -->
+            <div class="room_details">
+                <h1>{{room_category}}</h1>
+                <p>Double occupancy, 2 single bed, complimentary breakfast,
+                     AC, heater on demand, Atttached bath and 
+                     verandah with glorius view of the Aravallis. </p>
+            </div>
+
+            <!-- Div 3: Room Booking Form -->
+            <form id="booking_form" action="" method="POST">
+
+                <!-- {% csrf_token %} -->
+
+                <!-- Input Div -->
+                <div class="input_div">
+                    <label for="check_in">Check In : </label>
+                    <input type="datetime-local" id="check_in" name="checkin">
+                </div>
+
+                <!-- Input Div -->
+                <div class="input_div">
+                    <label for="check_out">Check Out : </label>
+                    <input type="datetime-local" id="check_out" name="checkout">
+                </div>
+
+                <!-- Input Div -->
+                <div class="input_div">
+                    <button type="submit">Book the Room</button>
+                </div>
+
+            </form>
+
+        </div> 
+
+    </div> 
+
+</body>
+
+</html>
